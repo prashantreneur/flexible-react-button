@@ -1,4 +1,5 @@
 import React from 'react';
+import PropsTypes from 'prop-types';
 import './button.css'
 const Button = (props) => {
     return (
@@ -16,3 +17,14 @@ const Button = (props) => {
     )
 }
 export default Button;
+
+
+Button.PropsTypes = {
+    colorCode: PropsTypes.string,
+    textColor: PropsTypes.string,
+    variant: PropsTypes.string,
+    size: PropsTypes.string,
+    type: PropsTypes.string,
+    disabled: PropsTypes.bool,
+    onClick: PropsTypes.func
+}

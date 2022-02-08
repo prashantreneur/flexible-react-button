@@ -1,6 +1,6 @@
-import react from 'react';
+
 import './App.css';
-import { Button } from './lib';
+import Button from './lib/index';
 
 function App() {
 
@@ -8,7 +8,6 @@ function App() {
     <div className="App">
       <Button
         variant='primary'
-        size='small'
         onClick={() => alert('Button Clicked')}
       >
         Click me! </Button>
